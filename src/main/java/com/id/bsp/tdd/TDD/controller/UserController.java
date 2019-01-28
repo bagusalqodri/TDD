@@ -11,7 +11,7 @@ import com.id.bsp.tdd.TDD.model.UserModel;
 
 
 @RestController
-public class HomeController{
+public class UserController{
 	  
 	@RequestMapping(path = "/")
 	public ModelAndView home() {
@@ -20,7 +20,7 @@ public class HomeController{
 	}
 	
 	@RequestMapping(path = "/api/tdd/{id}", method= RequestMethod.GET, produces = "application/json")
-	public String getData(@PathVariable final int id) throws Exception {
+	public String getUserById(@PathVariable final int id) throws Exception {
 		UserModel user = new UserModel();
 		user.setId(id);
 		user.setName("Bagus Al-Qodri");
