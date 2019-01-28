@@ -64,7 +64,7 @@ public class TddApplicationTests {
 		int id = 5;
 		UserModel user = new UserModel();
 		user.setId(id);
-		user.setName("Bagus Al-Qodri");
+		user.setName("Bagus Al-Qodr");
 		user.setContractDuration(10);
 		
 		Gson gson = new Gson();
